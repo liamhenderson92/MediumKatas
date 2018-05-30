@@ -7,6 +7,13 @@ list1.zipWithIndex.collect {
   case (element, index) if element !=0 && index !=0 && element%index== 0 => element
 }
 
+val nthList = List(3)
+val nth = 3
+
+nthList.distinct.reverse
+
+nthList.distinct.reverse(nth-1)
+
 
 
 
