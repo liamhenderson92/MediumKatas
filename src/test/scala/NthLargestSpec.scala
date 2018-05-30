@@ -4,11 +4,11 @@ class NthLargestSpec extends WordSpec with MustMatchers {
 
   "NthLargest" must {
 
-    "return the smallest number when given 2 different numbers and n equal to 1" in {
+    "return the smallest number when given 2 different numbers and n equal to 2" in {
       NthLargest.calculation(List(1,2),2) mustEqual 1
     }
 
-    "return the largest number when given 2 different numbers and n equal to 2" in {
+    "return the largest number when given 2 different numbers and n equal to 1" in {
       NthLargest.calculation(List(1,2),1) mustEqual 2
     }
 
