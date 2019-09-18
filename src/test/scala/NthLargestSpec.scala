@@ -3,9 +3,7 @@ import org.scalatest.{MustMatchers, WordSpec}
 class NthLargestSpec extends WordSpec with MustMatchers {
 
   "NthLargest" must {
-
     "return the correct elements" when {
-
       "given 2 different numbers and n equal to 2" in {
         NthLargest.calculation(List(1, 2), 2) mustEqual 1
       }
@@ -28,7 +26,6 @@ class NthLargestSpec extends WordSpec with MustMatchers {
     }
 
     "throw an Illegal Argument Exception" when {
-
       "when given a list of 2 numbers and n equal to 3" in
         intercept[IllegalArgumentException] {
           NthLargest.calculation(List(1, 2), 3)
